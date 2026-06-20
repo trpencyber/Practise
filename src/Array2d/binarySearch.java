@@ -5,7 +5,7 @@ public class binarySearch {
 	public static void main(String[] args) {
 		int[] arr= {1,2,3,4,5,6,7};
 		int left=0;
-		int target=6;
+		int target=5;
 		int right=arr.length-1;
 		 while(left<=right) {
 			 int mid=(left+right)/2;
@@ -21,6 +21,9 @@ public class binarySearch {
 		
 			 }
 		 }
+		 if(left > right) {
+			    System.out.println("Element not found!");
+			}
 		 
 		
 
